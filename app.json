@@ -1,0 +1,144 @@
+{
+  "name": "buzzmafiabot",
+  "description": "The MafiaBot made by @CitraAyuWinieF special thanks to respective HellBot owner @xnafrlzy. Join for updates related info @Kisahkitaakukaudanmereka",
+  "logo": "https://telegra.ph/file/5599bdacfbd38a8790a99.png",
+    "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/justteen/streammafia",
+  "website": "https://github.com/justteen/streammafia/",
+  "success_url": "https://t.me/buzzsupport",
+  "env": {
+    "ENV": {
+      "description": "Set this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Where downloaded files will go.",
+      "value": "./userbot/DOWNLOADS/",
+      "required": false
+    },
+    "ALIVE_NAME": {
+      "description": "Fill your Full name or Username like @H1M4N5HU0P. By default it is Mafia User",
+      "value": "@Kisahkitaakukaudanmereka",
+      "required": false
+    },
+    "ABUSE": {
+      "description": "Leave it blank if you dont want Profanity in MafiaBot. Else Fill ON.",
+      "value": "",
+      "required": false
+    },    
+    "ALIVE_MSG": {
+      "description": "Set Custom Alive Message When entering .mafia Command.",
+      "value": "🦹‍♂ Mafia Telah Datang 🦹‍♂",
+      "required": false
+    },
+    "ALIVE_PIC": {
+      "description": "Put here any telegraph media link for alive pic in .mafia command.",
+      "value": "https://telegra.ph/file/5599bdacfbd38a8790a99.png",
+      "required": false
+    },
+    "BIO_MSG": {
+      "description": "Put Your Telegram Bio Here Required For Auto Bio.",
+      "value": "🕵‍♂ Detektif BUZZ 🕵‍♂",
+      "required": false
+    },
+    "PMPERMIT_PIC": {
+      "description": "put here any telegraph media link for custom pmpermit pic.",
+      "value": "https://telegra.ph/file/5599bdacfbd38a8790a99.png",
+      "required": true
+    },
+    "CUSTOM_PMPERMIT": {
+      "description": "Enter Your custom pm permit msg.",
+      "value": "PLEASE DO NOT SPAM MY DM, I WILL REPLY YOU AFTER COME BACK ONLINE!",
+      "required": false
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Putting Others Value may result In Account Ban.",
+      "value": "3183668"
+    },
+    "SUDO_USERS": {
+      "description": "Enter your friends user id to to give him bot sudo access",
+      "value": "",
+      "required": false
+    },
+    "SUDO_COMMAND_HAND_LER": {
+      "description": "Please enter sudo user command handler",
+      "value": "*",
+      "required": false
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Putting Others Value May result In Account Ban.",
+      "value": "b027be1daaa9b585abab5fce672f1e14"
+    },
+    "MAFIABOT_LOGGER": {
+      "description": "Create a private channel/group add rose then type /id in group.",
+      "value": "-1001765271517"
+    },
+    "STRING_SESSION": {
+      "description": "Get this value by running https://repl.it/@H1M4N5HU0P/MAFIABOT#main.py ",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
+      "value": "4fcdf088-6ee8-4433-ade0-b1039ce631c2",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "The Value of App Name you filled in right on top.Required for updater to work.",
+      "value": "buzzmafiabot",
+      "required": true
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. And Don't Forget To Turn on inline Mode on bot settings. Get it.",
+      "value": "5239376015:AAEgctWWnTsujH1-GfHNZE25QgnlqCpyAj8"
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the username of your bot",
+      "value": "@buzzmafiabot"
+    },
+    "HELP_PIC": {
+      "description": "Put link of pic or gif to show your .help menu provider cool",
+      "value": "https://telegra.ph/file/5599bdacfbd38a8790a99.png",
+      "required": false 
+    },
+    "EMOJI_IN_HELP": {
+      "description": "Put here your favorite emoji to make your bot cool.",
+      "value": "🤪",
+      "required": true
+    },
+    "PM_DATA": {
+      "description": "Type DISABLE if you want to disable pm protection... ",
+      "value": "ENABLE",
+      "required": false 
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/amivin/aria2-heroku.git"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "heroku/python"
+  }]
+}
