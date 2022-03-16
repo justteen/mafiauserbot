@@ -23,7 +23,7 @@ else:
 
 mafia = bot.uid
 
-MAFIA_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/5599bdacfbd38a8790a99.png"
+MAFIA_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/5596812541665b58045b7.jpg"
 pm_caption = "  __**▁ ▂ ▄ ▅ ▆ ▇ █BUZZ MAFIA IS ALIVE█ ▇ ▆ ▅ ▄ ▂ ▁**__\n\n"
 
 pm_caption += f"**━━━━━━━━━━━━━━━━━━━━**\n\n"
