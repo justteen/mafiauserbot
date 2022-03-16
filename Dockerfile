@@ -1,4 +1,4 @@
-FROM sandy1709/catuserbot:alpine
+FROM justteen/mafiauserbot:latest
 
 #clonning repo 
 RUN git clone https://github.com/justteen/mafiauserbot /root/userbot
